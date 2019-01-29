@@ -1,9 +1,8 @@
 # kvm
-    ## KVM 使用virsh命令来创建虚拟机
+## KVM 使用virsh命令来创建虚拟机
      用已有的yz-gpu-base-k8s-400g.img镜像配合yz-gpu-k8s007.hogpu.cc.xml文件来创建虚拟机
-            
-    **一：具体步骤如下：
-    ###开启一个虚拟机
+**一：具体步骤如下：**
+**开启一个虚拟机**
     1. cd /var/lib/libvirt/images/
     2. 拷贝初始镜像
     `cp yz-gpu-base-k8s-400g.img yz-gpu-k8s006.hogpu.cc.img`
@@ -19,7 +18,7 @@
     `virsh edit yz-gpu-k8s006.hogpu.cc`
     6. 启动虚拟机（yz-gpu-k8s006.hogpu.cc名字只是相对于宿主机来说的名字，并不是虚拟机真正的名字）
     `virsh start yz-gpu-k8s006.hogpu.cc`
-    ###二：彻底删除虚拟机
+###二：彻底删除虚拟机
     1. 删除虚拟机   
     `virsh destroy yz-gpu-k8s006.hogpu.cc.img`
     2. 解除标记     
